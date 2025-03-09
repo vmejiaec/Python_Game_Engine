@@ -13,10 +13,14 @@ class Main:
         print("init")
 
     def update(self, delta_time):
+        #Condición de parada por número de ciclos
         self.ciclos += 1
         if self.ciclos >= self.ciclos_max:
             self.engine.stop()
         print("Ciclo No: ", self.ciclos, "--------------------------")
+
+        
+
         print("update", delta_time)
 
     def render(self):

@@ -8,4 +8,4 @@ class Ventana:
         self.canvas.pack()
 
     def mostrar(self):
-        self.ventana.mainloop()
+        self.ventana.update()

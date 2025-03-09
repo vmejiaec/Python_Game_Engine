@@ -1,8 +1,8 @@
 import time
-from ventana import Ventana
+from .ventana import Ventana
 
 class Game_Engine:
-    def __init__(self, fps = 60, ventana_ancho = 100, ventana_alto = 100, ventana_titulo = "Game Engine"):
+    def __init__(self, fps = 15, ventana_ancho = 500, ventana_alto = 500, ventana_titulo = "Game Engine"):
         self.running = False
         #fps
         self.fps = fps
@@ -13,6 +13,7 @@ class Game_Engine:
 
     def run(self):
         self.running = True
+        self.ventana.mostrar()
         self.init()
         while self.running:
             current_time = time.time()

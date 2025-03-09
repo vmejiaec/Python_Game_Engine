@@ -1,10 +1,13 @@
 from game_engine import Game_Engine
+from personajes import Personaje
 
 class Main:
     def __init__(self):
         self.engine = Game_Engine(fps=5)
         self.ciclos =0 
         self.ciclos_max = 15
+
+        self.player = Personaje(nombre="Qio")
 
     def init(self):
         print("init")
